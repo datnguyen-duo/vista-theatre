@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "NT-Wagner";
+  src: url("/assets/fonts/nt_wagner-webfont.woff2") format("woff2"),
+    url("/assets/fonts/nt_wagner-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

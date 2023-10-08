@@ -1,0 +1,61 @@
+$font-headline: "NT-Wagner", sans-serif;
+
+$color-body: #f6f5f4;
+$color-purple: #21202b;
+$color-brown: #a89078;
+$color-tan: #edeae8;
+
+$color-yellow: #ffd43a;
+
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1080px;
+$laptop-breakpoint: 1440px;
+
+$spacer: 8rem;
+$gutter: clamp(2rem, 8vw, 153.6px);
+
+@keyframes noise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+  100% {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
