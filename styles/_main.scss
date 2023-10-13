@@ -27,7 +27,7 @@
         }
         img {
           opacity: 0;
-          filter: saturate(4);
+          filter: saturate(5);
           &:not(:first-child) {
             position: absolute;
             top: 0;

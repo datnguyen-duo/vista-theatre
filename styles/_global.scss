@@ -48,10 +48,11 @@ h1,
 h2,
 .headline-2 {
   font-size: clamp(20px, 1.4vw, 26px);
-  font-family: $font-headline;
-  font-weight: 350;
+  font-family: $font-body;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1.15;
+  font-stretch: normal;
 }
 
 h3,
@@ -73,7 +74,7 @@ a {
 }
 
 p {
-  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-family: $font-body;
 }
 
 img {
