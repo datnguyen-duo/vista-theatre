@@ -1,9 +1,11 @@
 $font-headline: "NT-Wagner", sans-serif;
 $font-body: "aktiv-grotesk-extended", sans-serif;
-$color-body: #f6f5f4;
+$color-body: #faf8ec;
+$color-white: $color-body;
 $color-purple: #21202b;
 $color-brown: #a89078;
 $color-tan: #edeae8;
+$color-red: #e23f3a;
 
 $color-yellow: #ffd43a;
 
@@ -11,7 +13,7 @@ $mobile-breakpoint: 768px;
 $tablet-breakpoint: 1080px;
 $laptop-breakpoint: 1440px;
 
-$spacer: 2rem;
+$spacer: clamp(2rem, 8vw, 153.6px);
 $gutter: clamp(2rem, 8vw, 153.6px);
 
 @keyframes noise {

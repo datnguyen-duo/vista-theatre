@@ -1,10 +1,42 @@
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    margin-right: 1rem;
+  padding: $spacer $gutter 1rem;
+  margin-top: -3%;
+  background: url("/assets/footer-bg.webp") no-repeat 50% 0% / cover;
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &.top {
+      padding: 6rem 0 6rem;
+    }
+    &.bottom {
+      padding: 1rem 0 0;
+      position: relative;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .col {
+      a,
+      p {
+        line-height: 1.4;
+      }
+    }
+    img {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  > p {
+    font-size: 18px;
+    padding: 0 0 1rem;
   }
 }
