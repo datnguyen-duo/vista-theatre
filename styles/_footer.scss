@@ -34,6 +34,7 @@ footer {
 
       @media screen and (max-width: $mobile-breakpoint) {
         gap: 0.5rem;
+        grid-template-columns: 1fr;
       }
       img {
         position: absolute;
