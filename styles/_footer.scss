@@ -7,7 +7,6 @@ footer {
   .form {
     .success {
       opacity: 0;
-      text-align: left;
       font-size: 16px;
       margin-top: 0.5rem;
       margin-left: 5%;
@@ -31,6 +30,7 @@ footer {
     &.bottom {
       padding: 1rem 0 0;
       position: relative;
+      grid-template-columns: 1fr 1fr;
 
       @media screen and (max-width: $mobile-breakpoint) {
         gap: 0.5rem;
@@ -48,8 +48,12 @@ footer {
           text-align: left;
         }
 
-        &:nth-child(4) {
+        &:nth-child(3) {
           text-align: right;
+        }
+
+        @media screen and (max-width: $mobile-breakpoint) {
+          text-align: center !important;
         }
       }
 
