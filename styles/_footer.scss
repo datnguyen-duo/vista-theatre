@@ -43,6 +43,18 @@ footer {
       }
       p {
         font-size: 14px;
+
+        &:nth-child(2) {
+          text-align: left;
+        }
+
+        &:nth-child(4) {
+          text-align: right;
+        }
+      }
+
+      a {
+        text-decoration: underline;
       }
     }
     .col {
