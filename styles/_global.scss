@@ -55,7 +55,7 @@ h2,
 
 h3,
 .text__size-3 {
-  font-size: clamp(20px, 1.77vw, 34px);
+  font-size: clamp(18px, 1.77vw, 34px);
   font-family: $font-body;
   font-weight: 900;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ h3,
 
 h4,
 .text__size-4 {
-  font-size: clamp(20px, 1.25vw, 24px);
+  font-size: clamp(16px, 1.25vw, 24px);
   font-family: $font-body;
   font-weight: 900;
   text-transform: uppercase;
@@ -85,7 +85,7 @@ a {
 p {
   font-family: $font-body;
   font-weight: 500;
-  font-size: clamp(20px, 1.15vw, 22px);
+  font-size: clamp(16px, 1.15vw, 22px);
 }
 
 img {

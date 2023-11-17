@@ -4,15 +4,37 @@ footer {
   margin-top: -3%;
   background: url("/assets/footer-bg.webp") no-repeat 50% 0% / cover;
 
+  .form {
+    .success {
+      opacity: 0;
+      text-align: left;
+      font-size: 16px;
+      margin-top: 0.5rem;
+      margin-left: 5%;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media screen and (max-width: $mobile-breakpoint) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
     &.top {
       padding: 6rem 0 6rem;
     }
     &.bottom {
       padding: 1rem 0 0;
       position: relative;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        gap: 0.5rem;
+      }
       img {
         position: absolute;
         left: 0;
@@ -32,6 +54,10 @@ footer {
     img {
       justify-self: center;
       align-self: center;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        order: -1;
+      }
     }
   }
 

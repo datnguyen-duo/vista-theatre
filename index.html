@@ -8,14 +8,6 @@
     <link rel="stylesheet" href=“https://use.typekit.net/jcu4hli.css”>
     <link rel="stylesheet" href="/styles/fonts.css" />
     <link rel="stylesheet" href="/styles/style.css?v=1.1" />
-    <script
-      src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"
-      defer
-    ></script>
-    <script
-      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
-      defer
-    ></script>
     <script src="/scripts/libs/gsap.min.js" defer></script>
     <script src="/scripts/libs/ScrollTrigger.min.js" defer></script>
     <script src="/scripts/libs/SplitText.min.js" defer></script>
@@ -33,7 +25,11 @@
             </a>
           </li>
           <li>
-            <a href="/">
+            <a
+              href="https://www.fandango.com/vista-theatre-aacoq/theater-page?format=all"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="/assets/tickets-icon.svg"
                 alt="tickets-icon"
@@ -62,7 +58,12 @@
             /><span class="bottom">Theater</span>
           </h1>
         </div>
-        <a href="/tickets.html" class="cta">
+        <a
+          href="https://www.fandango.com/vista-theatre-aacoq/theater-page?format=all"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="cta"
+        >
           <img
             src="/assets/buy-tickets-icon.svg"
             alt="buy-tickets-icon"
@@ -109,7 +110,10 @@
             <p class="date">November 17-21</p>
             <p>Daily Showtimes at 2:45, 5:45, 8:45 pm</p>
             <div class="row">
-              <a href=""
+              <a
+                href="https://www.fandango.com/vista-theatre-aacoq/theater-page?format=all"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><img
                   src="/assets/buy-tickets-btn.svg"
                   alt="Buy Tickets Button"
@@ -146,15 +150,14 @@
 
               <div class="inner active">
                 <h3>Napoleon</h3>
-                <p>
-                  Coming November 22 - December 14 <br />Daily Showtimes at
-                  1:00, 4:45, and 8:30 PM
-                </p>
+                <p>Coming November 22 - December 14</p>
+                <p>Daily Showtimes at 1:00, 4:45, and 8:30 PM</p>
               </div>
 
               <div class="inner">
                 <h3>Zone of Interest</h3>
-                <p>Exlusive LA Engagement <br />Coming December 15</p>
+                <p>Exlusive LA Engagement</p>
+                <p>Coming December 15</p>
               </div>
             </div>
           </div>
@@ -203,7 +206,7 @@
       <footer>
         <div class="form">
           <h2>Join our <br />mailing list</h2>
-          <form action="">
+          <form method="POST" name="contact" data-netlify="true">
             <input type="text" placeholder="Email Address" required />
             <button type="submit">
               <img
@@ -214,13 +217,20 @@
               />
             </button>
           </form>
+          <p class="success">Thanks for signing up!</p>
         </div>
 
         <div class="top grid">
           <div class="col">
-            <a href="/coming-soon.html" class="text__size-3">Coming soon</a>
-            <a href="/now-playing.html" class="text__size-3">Now playing</a>
-            <a href="/get-tickets.html" class="text__size-3">Get tickets</a>
+            <a href="#featured" class="text__size-3">Coming soon</a>
+            <a href="#now-playing" class="text__size-3">Now playing</a>
+            <a
+              href="https://www.fandango.com/vista-theatre-aacoq/theater-page?format=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text__size-3"
+              >Get tickets</a
+            >
           </div>
 
           <img src="/assets/logo.svg" alt="logo" width="150" height="40" />

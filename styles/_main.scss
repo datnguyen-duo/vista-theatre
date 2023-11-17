@@ -6,6 +6,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 0;
+  }
   .bg-image {
     position: absolute;
     left: 0;
@@ -17,13 +23,18 @@
   }
   h1 {
     img {
-      width: 90%;
+      width: 100%;
       max-width: 1440px;
       margin-top: -17vh;
       margin-bottom: -15vh;
       height: 65vh;
       object-fit: contain;
       mix-blend-mode: hard-light;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        margin: auto;
+        height: auto;
+      }
     }
 
     span {
@@ -38,7 +49,9 @@
     position: absolute;
     bottom: 0;
     width: 20%;
-
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 30%;
+    }
     &.--left {
       left: 0;
       transform: translateY(30%);
@@ -73,14 +86,19 @@
     margin-top: auto;
     width: 15%;
     z-index: 1;
+    min-width: 150px;
+    @media screen and (max-width: $mobile-breakpoint) {
+      margin-top: 2rem;
+    }
   }
 }
 
 #now-playing {
-  padding: $spacer 0;
+  padding: $spacer $gutter;
   text-align: center;
   color: $color-red;
   position: relative;
+
   .background {
     position: absolute;
     width: 100%;
@@ -97,7 +115,11 @@
   .slider__rotate {
     &--wrapper {
       img {
-        width: 35%;
+        width: 30%;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+          width: 70%;
+        }
       }
     }
     &--content {
@@ -136,6 +158,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 1rem 2rem $spacer;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      grid-template-columns: 1fr;
+    }
     .col {
       position: relative;
       align-self: center;
@@ -162,18 +188,43 @@
           &.active {
             display: block;
           }
+
+          p {
+            &:not(:last-child) {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        width: 100%;
+        .circle-bg {
+          width: 100%;
+          img {
+            width: 100%;
+          }
         }
       }
 
       &:nth-child(2) {
         align-items: center;
         transform: rotate(-5deg);
+        @media screen and (max-width: $mobile-breakpoint) {
+          order: -1;
+        }
         .slider__vertical {
           height: 60vw;
+          max-height: 1152px;
+
           overflow: hidden;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+
+          @media screen and (max-width: $mobile-breakpoint) {
+            height: 125vw;
+          }
           &--wrapper {
             height: 100%;
             overflow: hidden;

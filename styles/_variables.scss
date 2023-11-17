@@ -13,7 +13,7 @@ $mobile-breakpoint: 768px;
 $tablet-breakpoint: 1080px;
 $laptop-breakpoint: 1440px;
 
-$spacer: clamp(2rem, 8vw, 153.6px);
+$spacer: clamp(4rem, 8vw, 153.6px);
 $gutter: clamp(2rem, 8vw, 153.6px);
 
 @keyframes noise {
