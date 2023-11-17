@@ -207,7 +207,13 @@
         <div class="form">
           <h2>Join our <br />mailing list</h2>
           <form method="POST" name="contact" data-netlify="true">
-            <input type="text" placeholder="Email Address" required />
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              id="email"
+              required="required"
+            />
             <button type="submit">
               <img
                 src="/assets/caret.svg"

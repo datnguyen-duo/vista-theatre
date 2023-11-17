@@ -144,7 +144,7 @@
 
 #featured {
   position: relative;
-
+  padding-top: 1rem;
   .bg-image {
     position: absolute;
     bottom: 0;
@@ -159,6 +159,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 1rem 2rem $spacer;
+    overflow: hidden;
 
     @media screen and (max-width: $mobile-breakpoint) {
       grid-template-columns: 1fr;
@@ -210,7 +211,7 @@
 
       &:nth-child(2) {
         align-items: center;
-        transform: rotate(-5deg);
+        transform: rotate(-5deg) translateY(-6%);
         @media screen and (max-width: $mobile-breakpoint) {
           order: -1;
         }
