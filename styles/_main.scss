@@ -159,7 +159,7 @@
   .top {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 1rem 2rem $spacer;
+    padding: 0 2rem $spacer;
     overflow: hidden;
 
     @media screen and (max-width: $mobile-breakpoint) {
@@ -169,12 +169,12 @@
       position: relative;
       align-self: center;
       .content {
-        position: absolute;
+        // position: absolute;
         padding: 15%;
-        left: 0;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        // left: 0;
+        // right: 0;
+        // top: 50%;
+        // transform: translateY(-50%);
         text-align: center;
         h3 {
           margin: 2rem 0 1rem;
@@ -212,32 +212,20 @@
 
       &:nth-child(2) {
         align-items: center;
-        // transform: rotate(-5deg) translateY(-6%);
         @media screen and (max-width: $mobile-breakpoint) {
           order: -1;
         }
         .slider__vertical {
-          // height: 60vw;
-          // max-height: 1152px;
-
           overflow: hidden;
           display: flex;
           flex-direction: column;
-          // justify-content: flex-end;
 
-          @media screen and (max-width: $mobile-breakpoint) {
-            height: 125vw;
-          }
           &--wrapper {
-            height: 100%;
-            overflow: hidden;
-
             .inner {
               display: flex;
               flex-direction: column;
               justify-content: flex-end;
               pointer-events: none;
-              height: 100%;
             }
           }
           &--slide {
