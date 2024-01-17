@@ -146,6 +146,8 @@
 #featured {
   position: relative;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
   .bg-image {
     position: absolute;
     bottom: 0;
@@ -156,14 +158,24 @@
     pointer-events: none;
   }
 
+  > h2 {
+    text-align: center;
+    padding: 4rem;
+  }
+
   .top {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 0 2rem $spacer;
+    padding: 0 2rem;
     overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: -1px;
+    }
 
     @media screen and (max-width: $mobile-breakpoint) {
       grid-template-columns: 1fr;
+      gap: 0;
     }
     .col {
       position: relative;
@@ -176,6 +188,10 @@
         // top: 50%;
         // transform: translateY(-50%);
         text-align: center;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+          padding: 2rem;
+        }
         h3 {
           margin: 2rem 0 1rem;
         }
