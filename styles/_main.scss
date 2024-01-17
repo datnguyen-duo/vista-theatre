@@ -126,10 +126,13 @@
 
       h3 {
         margin: 0 0 1rem;
+        @media screen and (max-width: $mobile-breakpoint) {
+          margin: 2rem 0 1rem;
+        }
       }
 
       p {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
       }
 
       .row {
@@ -190,7 +193,7 @@
         text-align: center;
 
         @media screen and (max-width: $mobile-breakpoint) {
-          padding: 2rem;
+          padding: 0 2rem 4rem;
         }
         h3 {
           margin: 2rem 0 1rem;
