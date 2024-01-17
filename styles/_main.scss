@@ -228,6 +228,7 @@
 
       &:nth-child(2) {
         align-items: center;
+        padding: 0 10%;
         @media screen and (max-width: $mobile-breakpoint) {
           order: -1;
         }
