@@ -39,12 +39,12 @@
 
   &__grid {
     color: $color-black;
-    padding: 0 10vw;
+    padding: 0 calc(min(10vw, 192px));
 
     &--row {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 10vw;
+      gap: calc(min(10vw, 192px));
       position: relative;
 
       @media screen and (max-width: $mobile-breakpoint) {
@@ -67,11 +67,13 @@
       }
 
       &.sp {
-        gap: 4rem 10vw;
+        gap: 4rem calc(min(10vw, 192px));
         .tf-main__grid--cell {
           &:nth-child(1) {
             grid-row-end: span 2;
-
+            @media screen and (max-width: $mobile-breakpoint) {
+              grid-row-end: unset;
+            }
             &:after {
               content: "";
               width: 150px;
@@ -89,8 +91,11 @@
             grid-column-end: span 2;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 10vw;
-
+            gap: calc(min(10vw, 192px));
+            @media screen and (max-width: $mobile-breakpoint) {
+              grid-template-columns: 1fr;
+              grid-column-end: unset;
+            }
             > * {
               align-self: center;
             }
@@ -108,6 +113,19 @@
 
             .synopsis {
               margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+
+      &.fixed {
+        .tf-main__grid--cell {
+          align-items: flex-start;
+
+          &:not(:last-child) {
+            > * {
+              position: sticky;
+              top: 4rem;
             }
           }
         }
