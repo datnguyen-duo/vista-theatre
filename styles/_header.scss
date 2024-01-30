@@ -10,5 +10,19 @@ nav {
     align-items: center;
     justify-content: space-between;
     list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      a {
+        margin-left: 1rem;
+
+        @media screen and (max-width: $mobile-breakpoint) {
+          &.index {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }

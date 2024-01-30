@@ -1,0 +1,156 @@
+#tf-banner {
+  position: relative;
+  text-align: center;
+  padding: 10rem 0 2rem;
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 50% 100%;
+  }
+  h3 {
+    margin-bottom: $spacer;
+  }
+}
+
+.tf-main {
+  &__header {
+    text-align: center;
+    padding: $gutter 0 $spacer;
+
+    h2 {
+      color: $color-red;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        br {
+          display: none;
+        }
+      }
+    }
+    p {
+      color: $color-black;
+      margin-top: 1rem;
+    }
+  }
+
+  &__grid {
+    color: $color-black;
+    padding: 0 10vw;
+
+    &--row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10vw;
+      position: relative;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        grid-template-columns: 1fr;
+      }
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+        padding-bottom: 4rem;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: url("/assets/h-line.svg") no-repeat;
+          width: 100%;
+          height: 3px;
+        }
+      }
+    }
+
+    &--cell {
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        @media screen and (max-width: $mobile-breakpoint) {
+          justify-content: center;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: url("/assets/v-line.svg") no-repeat;
+          width: 3px;
+          height: 100%;
+          @media screen and (max-width: $mobile-breakpoint) {
+            content: unset;
+          }
+        }
+        .text__size-2 {
+          color: $color-red;
+        }
+        .text__size-4 {
+          &:first-child {
+            margin-bottom: 1rem;
+          }
+
+          &.times {
+            margin: 2rem 0 0.5rem;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+      }
+
+      &:nth-child(3) {
+        h3 {
+          margin-bottom: 0.5rem;
+        }
+        .text__size-4 {
+          margin: 1rem 0 0.2rem;
+
+          &:first-of-type {
+            margin: 0.2rem 0 1rem;
+          }
+        }
+
+        .synopsis {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &--cta {
+      text-align: center;
+      color: $color-red;
+      padding: $spacer 0;
+      a {
+        display: block;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+body.ib {
+  footer {
+    > h2 {
+      @media screen and (max-width: $mobile-breakpoint) {
+        br {
+          display: none;
+        }
+      }
+    }
+    > a {
+      text-align: center;
+      margin: 2rem auto;
+      width: 15vw;
+      min-width: 180px;
+      display: block;
+    }
+  }
+}
