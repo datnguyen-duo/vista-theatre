@@ -85,6 +85,10 @@
               bottom: 0;
               margin: auto;
               transform: translateX(50%);
+
+              @media screen and (max-width: $mobile-breakpoint) {
+                content: unset;
+              }
             }
           }
           &:not(:nth-child(1)) {
@@ -95,6 +99,11 @@
             @media screen and (max-width: $mobile-breakpoint) {
               grid-template-columns: 1fr;
               grid-column-end: unset;
+
+              img {
+                width: 70%;
+                margin: auto;
+              }
             }
             > * {
               align-self: center;
@@ -174,6 +183,7 @@
         @media screen and (max-width: $mobile-breakpoint) {
           img {
             width: 70%;
+            margin: auto;
           }
         }
       }
