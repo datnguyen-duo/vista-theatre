@@ -20,7 +20,7 @@
 .tf-main {
   &__header {
     text-align: center;
-    padding: $gutter 0 $spacer;
+    padding: $gutter 2rem $spacer;
 
     h2 {
       color: $color-red;
@@ -49,6 +49,7 @@
 
       @media screen and (max-width: $mobile-breakpoint) {
         grid-template-columns: 1fr;
+        text-align: center;
       }
       &:not(:last-child) {
         margin-bottom: 4rem;
@@ -104,6 +105,12 @@
       &:nth-child(2) {
         display: flex;
         align-items: center;
+        justify-content: center;
+        @media screen and (max-width: $mobile-breakpoint) {
+          img {
+            width: 70%;
+          }
+        }
       }
 
       &:nth-child(3) {

@@ -14,12 +14,21 @@ nav {
     li {
       display: flex;
       align-items: center;
-      a {
-        margin-left: 1rem;
 
-        @media screen and (max-width: $mobile-breakpoint) {
+      a {
+        display: flex;
+      }
+
+      &:last-child {
+        a {
+          margin-left: 1rem;
           &.index {
             display: none;
+          }
+          @media screen and (max-width: $mobile-breakpoint) {
+            img {
+              max-width: 100px;
+            }
           }
         }
       }
