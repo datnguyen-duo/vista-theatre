@@ -39,12 +39,12 @@
 
   &__grid {
     color: $color-black;
-    padding: 0 calc(min(10vw, 192px));
+    padding: 0 calc(min(8vw, 150px));
 
     &--row {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: calc(min(10vw, 192px));
+      gap: calc(min(8vw, 150px));
       position: relative;
 
       @media screen and (max-width: $mobile-breakpoint) {
@@ -67,7 +67,7 @@
       }
 
       &.sp {
-        gap: 4rem calc(min(10vw, 192px));
+        gap: 4rem calc(min(8vw, 150px));
         .tf-main__grid--cell {
           &:nth-child(1) {
             grid-row-end: span 2;
@@ -76,8 +76,8 @@
             }
             &:after {
               content: "";
-              width: 150px;
-              height: 150px;
+              width: 167px;
+              height: 167px;
               position: absolute;
               background: #faf8ec url("/assets/same-program.svg") no-repeat;
               right: 0;
@@ -95,7 +95,7 @@
             grid-column-end: span 2;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: calc(min(10vw, 192px));
+            gap: calc(min(8vw, 150px));
             @media screen and (max-width: $mobile-breakpoint) {
               grid-template-columns: 1fr;
               grid-column-end: unset;
@@ -203,6 +203,10 @@
         .synopsis {
           margin-bottom: 2rem;
         }
+      }
+
+      a {
+        pointer-events: none;
       }
     }
 
