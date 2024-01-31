@@ -76,10 +76,11 @@
             }
             &:after {
               content: "";
-              width: 167px;
-              height: 167px;
+              width: clamp(4rem, 8vw, 153.6px);
+              height: clamp(4rem, 8vw, 153.6px);
               position: absolute;
-              background: #faf8ec url("/assets/same-program.svg") no-repeat;
+              background: #faf8ec url("/assets/same-program.svg") 50% / contain
+                no-repeat;
               right: 0;
               top: 0;
               bottom: 0;
