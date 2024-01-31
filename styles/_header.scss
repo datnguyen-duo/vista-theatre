@@ -11,6 +11,7 @@
   width: 100%;
   font-weight: 900;
   font-size: 14px;
+  line-height: 1.3;
   &::before,
   &::after {
     content: url("/assets/announcement-stars.svg");
@@ -19,6 +20,9 @@
 
 body.index {
   margin-top: 34px;
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-top: 52px;
+  }
 }
 
 nav {
@@ -28,7 +32,9 @@ nav {
   top: 34px;
   width: 100%;
   z-index: 999;
-
+  @media screen and (max-width: $mobile-breakpoint) {
+    top: 52px;
+  }
   body.ib & {
     top: 0;
   }
