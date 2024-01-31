@@ -22,6 +22,10 @@
 }
 
 .tf-main {
+  position: relative;
+
+  background: url("/assets/now-playing-texture.webp") 0% 0% / contain repeat;
+
   &__header {
     text-align: center;
     padding: $gutter 2rem $spacer;
