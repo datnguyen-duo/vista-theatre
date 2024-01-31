@@ -10,17 +10,22 @@
   left: 0;
   width: 100%;
   font-weight: 900;
+  font-size: 14px;
+  &::before,
+  &::after {
+    content: url("/assets/announcement-stars.svg");
+  }
 }
 
 body.index {
-  margin-top: 42px;
+  margin-top: 34px;
 }
 
 nav {
   padding: 0.5rem 1rem;
   position: absolute;
   left: 0;
-  top: 42px;
+  top: 34px;
   width: 100%;
   z-index: 999;
 

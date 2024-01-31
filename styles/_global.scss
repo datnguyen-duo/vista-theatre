@@ -89,9 +89,10 @@ a {
 }
 
 p {
-  font-family: $font-body;
+  font-family: $font-body-c;
   font-weight: 500;
   font-size: clamp(15px, 1.15vw, 22px);
+  line-height: 1.5;
 }
 
 img {
