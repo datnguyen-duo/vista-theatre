@@ -1,10 +1,32 @@
+.announcement-bar {
+  background-color: $color-red;
+  color: $color-white;
+  padding: 0.5rem;
+  text-align: center;
+  display: block;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 900;
+}
+
+body.index {
+  margin-top: 42px;
+}
+
 nav {
   padding: 0.5rem 1rem;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 42px;
   width: 100%;
   z-index: 999;
+
+  body.ib & {
+    top: 0;
+  }
   ul {
     display: flex;
     align-items: center;
