@@ -176,7 +176,7 @@
         }
 
         .times {
-          margin: 1rem 0 4rem;
+          margin: 1rem 0 3rem;
           display: grid;
           grid-auto-flow: column;
           grid-auto-columns: 1fr;
@@ -236,6 +236,7 @@
 
       .synopsis {
         margin: 1rem 0;
+        font-size: 14px;
       }
     }
 
