@@ -157,6 +157,7 @@
         @media screen and (max-width: $mobile-breakpoint) {
           justify-content: center;
           padding: 0;
+          order: 2;
         }
         &::before {
           content: "";
