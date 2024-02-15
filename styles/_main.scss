@@ -15,12 +15,9 @@
     z-index: -1;
   }
 
-  h1 {
+  .content {
     position: absolute;
-    bottom: 21%;
-    @media screen and (max-width: $mobile-breakpoint) {
-      bottom: 17%;
-    }
+    bottom: 4rem;
   }
   .cta {
     display: inline-block;
@@ -28,10 +25,7 @@
     width: 15%;
     z-index: 1;
     min-width: 150px;
-    margin-top: -3.75%;
-    @media screen and (max-width: $mobile-breakpoint) {
-      margin-top: -38px;
-    }
+    margin-top: 2rem;
   }
 
   > img {
