@@ -2,6 +2,11 @@
   position: relative;
   background: url("/assets/now-playing-texture.webp") 0% 0% / contain repeat;
   padding-bottom: 10rem;
+
+  overflow: hidden;
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding-bottom: 0;
+  }
   .bg-image {
     position: absolute;
     top: 0;
@@ -12,12 +17,23 @@
     pointer-events: none;
     object-position: 0 0;
     object-fit: cover;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      bottom: 0;
+      margin: auto;
+      object-position: 50% 50%;
+      height: 108%;
+    }
   }
   &__header {
     text-align: center;
     padding: $gutter 2rem $spacer;
     color: $color-red;
     position: relative;
+
+    @media screen {
+      padding: $spacer 2rem 2rem;
+    }
     h2 {
       @media screen and (max-width: $mobile-breakpoint) {
         br {
@@ -160,7 +176,7 @@
             margin-bottom: 0.5rem;
           }
           .text__size-4 {
-            margin: 1rem 0 0.2rem;
+            margin: 1rem 0 0rem;
 
             &:first-of-type {
               margin: 0.2rem 0 1rem;
@@ -170,8 +186,7 @@
       }
 
       .synopsis {
-        margin: 1rem 0;
-        font-size: 14px;
+        margin: 0.5rem 0;
       }
     }
 

@@ -79,67 +79,6 @@
   }
 }
 
-#now-playing {
-  padding: $spacer $gutter;
-  text-align: center;
-  color: $color-red;
-  position: relative;
-
-  .background {
-    position: absolute;
-    width: 100%;
-    height: 110%;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-  }
-
-  > p {
-    margin: 1rem 0 2rem;
-  }
-
-  .slider__rotate {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 4rem;
-
-    @media screen and (max-width: $mobile-breakpoint) {
-      grid-template-columns: 1fr;
-    }
-    &--wrapper {
-      align-self: center;
-      img {
-        width: 60%;
-        @media screen and (max-width: $mobile-breakpoint) {
-          width: 90%;
-        }
-      }
-    }
-    &--content {
-      align-self: center;
-
-      h3 {
-        margin: 0 0 1rem;
-        @media screen and (max-width: $mobile-breakpoint) {
-          margin: 2rem 0 1rem;
-        }
-      }
-
-      p {
-        margin-bottom: 0.5rem;
-      }
-
-      .row {
-        justify-content: center;
-        margin-top: 2rem;
-        a {
-          margin: 0 0.5rem;
-        }
-      }
-    }
-  }
-}
-
 #pams-coffy {
   background-color: #c37d12;
   display: grid;
