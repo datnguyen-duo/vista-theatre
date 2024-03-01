@@ -24,41 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
   document.body.classList.remove("loading");
 
-  gsap.to("#banner h1 img ", {
-    yPercent: 15,
-    scrollTrigger: {
-      trigger: "#banner",
-      start: "top top",
-      scrub: true,
+  const swiper = new Swiper(".swiper", {
+    loop: false,
+    slidesPerView: "auto",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  });
-
-  var toggles = document.querySelectorAll(".slider__vertical--toggle li"),
-    wrapper = document.querySelector(".slider__vertical--wrapper"),
-    slides = document.querySelectorAll(".slider__vertical--slide"),
-    info = document.querySelectorAll("#featured .content .inner");
-
-  wrapper.scrollTo(0, 0);
-  toggles.forEach((el, i) => {
-    var pos = slides[i].offsetTop;
-
-    el.addEventListener("click", function () {
-      wrapper.scrollTo({
-        top: pos,
-        behavior: "smooth",
-      });
-
-      toggles.forEach((toggleClass) => {
-        toggleClass.classList.remove("active");
-      });
-
-      toggles[i].classList.add("active");
-
-      info.forEach((infoClass) => {
-        infoClass.classList.remove("active");
-      });
-
-      info[i].classList.add("active");
-    });
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
 });

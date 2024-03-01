@@ -18,18 +18,11 @@
   }
 }
 
-body.index {
-  margin-top: 34px;
-  @media screen and (max-width: $mobile-breakpoint) {
-    margin-top: 52px;
-  }
-}
-
 nav {
   padding: 0.5rem 1rem;
   position: absolute;
   left: 0;
-  top: 34px;
+  top: 0;
   width: 100%;
   z-index: 999;
   @media screen and (max-width: $mobile-breakpoint) {

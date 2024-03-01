@@ -215,3 +215,56 @@ form {
     animation: noise 1s steps(2) infinite;
   }
 }
+
+.disabled {
+  pointer-events: none;
+}
+
+.swiper {
+  overflow: hidden;
+  &-wrapper {
+    display: flex;
+  }
+  &-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-button {
+    margin: 0 0.5rem;
+    img {
+      width: 30px;
+    }
+    &-prev {
+      transform: scaleX(-1);
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    &-bullet {
+      width: 7px;
+      height: 7px;
+      margin: 0 2px;
+      border-radius: 50%;
+      background-color: rgba($color-brown, 0.5);
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      &-active {
+        background-color: $color-red;
+      }
+    }
+  }
+}
