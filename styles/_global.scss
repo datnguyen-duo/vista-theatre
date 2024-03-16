@@ -242,6 +242,10 @@ form {
   &-button {
     margin: 0 0.5rem;
     cursor: pointer;
+    &-disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
     img {
       width: 30px;
     }
