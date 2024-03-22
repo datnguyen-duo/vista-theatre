@@ -15,7 +15,7 @@
     height: 103%;
     z-index: -1;
     pointer-events: none;
-    object-position: 0 0;
+    object-position: 50% 50%;
     object-fit: cover;
 
     @media screen and (max-width: $mobile-breakpoint) {
@@ -28,13 +28,14 @@
   &__header {
     text-align: center;
     padding: $gutter 2rem $spacer;
-    color: $color-red;
     position: relative;
 
     @media screen {
       padding: $spacer 2rem 2rem;
     }
     h2 {
+      color: $color-red;
+      position: relative;
       @media screen and (max-width: $mobile-breakpoint) {
         br {
           display: none;
@@ -43,6 +44,7 @@
     }
     p {
       margin-top: 1rem;
+      color: $color-black;
     }
   }
 
@@ -204,7 +206,9 @@
   &.--coming-soon {
     color: $color-white;
     .post__header {
-      color: $color-white;
+      h2 {
+        color: $color-white;
+      }
     }
 
     .post__grid {
